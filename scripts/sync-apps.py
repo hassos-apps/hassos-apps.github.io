@@ -227,10 +227,17 @@ def write_data_file(apps: list[dict], output_path: Path) -> None:
         "",
     ]
     for app in apps:
-        lines.append("")
-        lines.append(dict_to_yaml(app))
+        # Serialize with indent=1 so each key gets "  key: value",
+        # then replace the leading spaces on the first line with "- "
+        # to produce a valid YAML list entry.
+        app_yaml_lines = dict_to_yaml(app, indent=1).splitlines()
+        first = "- " + app_yaml_lines[0].lstrip()
+        rest = app_yaml_lines[1:]
+        lines.append(first)
+        lines.extend(rest)
+        lines.append("")  # blank line between entries
 
-    output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:

@@ -1,15 +1,13 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
-gem "jekyll-seo-tag", "~> 2.8"
-gem "jekyll-sitemap", "~> 1.4"
 
 # GitHub Pages compatibility (optional — use for exact parity with GH Pages)
 # gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-sitemap", "~> 1.4"
 end
 
 # Windows and JRuby compatibility
