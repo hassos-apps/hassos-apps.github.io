@@ -31,10 +31,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip pyyaml
+
       - name: Fetch app metadata and update _data/apps.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/sync-apps.py
+
+      - name: Run project quality checks
+        run: python scripts/check-site.py
 
       - name: Commit and push if changed
         run: |

@@ -1,7 +1,14 @@
 title: HassOS Apps
+lang: en
 description: A curated ecosystem of purpose-built Home Assistant apps, crafted with structure, clarity and long-term reliability.
 url: "https://hassos-apps.github.io"
 baseurl: ""
+author:
+  name: HassOS Apps
+social:
+  name: HassOS Apps
+  links:
+    - https://github.com/hassos-apps
 
 # Repository
 github_username: hassos-apps

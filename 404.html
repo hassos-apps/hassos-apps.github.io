@@ -1,32 +1,25 @@
 ---
-layout: null
+layout: default
 permalink: /404.html
+title: 404 - HassOS Apps
+description: The requested page could not be found.
+show_header: false
+show_footer: false
+body_class: min-h-screen flex items-center justify-center
 ---
-<!DOCTYPE html>
-<html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — HassOS Apps</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-</head>
-<body class="min-h-screen flex items-center justify-center">
+<section class="w-full">
   <div class="text-center px-4">
     <p class="text-7xl font-bold mb-4" style="color:hsl(var(--foreground)); letter-spacing:-.03em;">404</p>
-    <p class="text-lg font-medium mb-2">Page not found</p>
+    <h1 class="text-lg font-medium mb-2">Page not found</h1>
     <p class="text-sm mb-8" style="color:hsl(var(--muted-foreground));">
       The page you're looking for doesn't exist or has been moved.
     </p>
-    <a href="/" class="btn btn-outline">
+    <a href="{{ '/' | relative_url }}" class="btn btn-outline">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="m15 18-6-6 6-6"/>
       </svg>
       Back to home
     </a>
   </div>
-</body>
-</html>
+</section>

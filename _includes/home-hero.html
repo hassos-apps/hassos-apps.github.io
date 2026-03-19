@@ -1,0 +1,68 @@
+<section class="relative min-h-screen flex items-center pt-14 overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="hero-glow"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-24 md:py-32 w-full">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="flex justify-center mb-6">
+        <span class="badge badge-outline flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+          Open Source · MIT License
+        </span>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6"
+          style="color: hsl(var(--foreground)); letter-spacing: -0.03em;">
+        HassOS Apps
+      </h1>
+
+      <p class="text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl mx-auto"
+         style="color: hsl(var(--muted-foreground));">
+        A curated ecosystem of purpose-built Home Assistant apps,<br class="hidden sm:block" />
+        crafted with <span style="color: hsl(var(--foreground)); font-weight:500;">structure</span>,
+        <span style="color: hsl(var(--foreground)); font-weight:500;">clarity</span> and
+        <span style="color: hsl(var(--foreground)); font-weight:500;">long-term reliability</span>.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-16">
+        <a href="https://my.home-assistant.io/redirect/supervisor_add_addon_repository?repository_url=https%3A%2F%2Fgithub.com%2Fhassos-apps%2Frepository"
+           target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+          Add Repository
+        </a>
+        <a href="https://github.com/hassos-apps" target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          View on GitHub
+        </a>
+        <a href="#apps" class="btn btn-ghost btn-lg" style="color: hsl(var(--muted-foreground));">
+          Browse apps
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto">
+        <div class="card text-center py-4">
+          <div class="text-2xl font-bold mb-0.5" style="color: hsl(var(--foreground));">{{ site.data.apps | size }}</div>
+          <div class="text-xs" style="color: hsl(var(--muted-foreground));">Apps published</div>
+        </div>
+        <div class="card text-center py-4">
+          <div class="text-2xl font-bold mb-0.5" style="color: hsl(var(--foreground));">Active</div>
+          <div class="text-xs" style="color: hsl(var(--muted-foreground));">Maintenance</div>
+        </div>
+        <div class="card text-center py-4">
+          <div class="text-2xl font-bold mb-0.5" style="color: hsl(var(--foreground));">MIT</div>
+          <div class="text-xs" style="color: hsl(var(--muted-foreground));">License</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

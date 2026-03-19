@@ -6,6 +6,7 @@
   "scripts": {
     "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
     "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "check": "python scripts/check-site.py",
     "build": "npm run build:css",
     "dev": "npm run watch:css"
   },
