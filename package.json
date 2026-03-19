@@ -1,0 +1,15 @@
+{
+  "name": "hassos-apps-website",
+  "version": "1.0.0",
+  "description": "HassOS Apps — GitHub Pages website",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "build": "npm run build:css",
+    "dev": "npm run watch:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

@@ -1,0 +1,35 @@
+title: HassOS Apps
+description: A curated ecosystem of purpose-built Home Assistant apps, crafted with structure, clarity and long-term reliability.
+url: "https://hassos-apps.github.io"
+baseurl: ""
+
+# Repository
+github_username: hassos-apps
+repository_url: https://github.com/hassos-apps/repository
+
+# Build settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - README.md
+
+# Collections (for future app pages)
+collections:
+  apps:
+    output: true
+    permalink: /apps/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
