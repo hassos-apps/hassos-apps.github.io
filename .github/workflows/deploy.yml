@@ -33,6 +33,9 @@ jobs:
 
       - name: Build Tailwind CSS
         run: npm run build:css
+
+      - name: Run project quality checks
+        run: python scripts/check-site.py
       # ────────────────────────────────────────────────────────────
 
       # ── Ruby + Jekyll ───────────────────────────────────────────

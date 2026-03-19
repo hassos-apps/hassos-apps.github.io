@@ -1,0 +1,10 @@
+{% if include.app.icon_url %}
+  <img src="{{ include.app.icon_url }}"
+       alt="{{ include.app.name }} icon"
+       width="28" height="28"
+       class="rounded-md app-icon-image"
+       data-icon-fallback="{{ include.app.icon }}"
+       style="border:1px solid hsl(var(--border)); object-fit:cover;" />
+{% else %}
+  <span class="app-icon-fallback" aria-hidden="true">{{ include.app.icon }}</span>
+{% endif %}

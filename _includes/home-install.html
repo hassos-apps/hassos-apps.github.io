@@ -1,0 +1,107 @@
+<section id="install" class="py-24" style="border-top: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <p class="section-label mb-3">Installation</p>
+        <h2 class="text-3xl font-bold tracking-tight mb-3" style="letter-spacing:-0.02em;">
+          Get started in minutes
+        </h2>
+        <p class="mb-8 text-base leading-relaxed" style="color: hsl(var(--muted-foreground));">
+          Add the HassOS Apps repository to Home Assistant and install any app directly from the App Store.
+        </p>
+
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-4">
+            <div class="step-number">1</div>
+            <div>
+              <p class="font-medium text-sm mb-1">Open Home Assistant Settings</p>
+              <p class="text-sm" style="color: hsl(var(--muted-foreground));">
+                Navigate to <code>Settings</code> → <code>Apps</code> → <code>App Store</code>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="step-number">2</div>
+            <div>
+              <p class="font-medium text-sm mb-1">Open the Repositories panel</p>
+              <p class="text-sm" style="color: hsl(var(--muted-foreground));">
+                Click the menu <code>⋮</code> in the top-right corner, then select <code>Repositories</code>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="step-number">3</div>
+            <div>
+              <p class="font-medium text-sm mb-1">Add the repository URL</p>
+              <p class="text-sm mb-3" style="color: hsl(var(--muted-foreground));">
+                Paste the URL below and click <strong>Add</strong>:
+              </p>
+              <div class="code-block flex items-center justify-between gap-3">
+                <span id="repo-url">https://github.com/hassos-apps/repository</span>
+                <button id="copy-repo-url" type="button" class="btn btn-ghost" data-copy-target="#repo-url"
+                        style="padding:0.25rem 0.5rem; font-size:0.75rem; flex-shrink:0;"
+                        aria-describedby="copy-status">
+                  <span class="sr-only">Copy repository URL</span>
+                  <svg class="copy-icon-default" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <svg class="copy-icon-success hidden" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </button>
+              </div>
+              <p id="copy-status" class="text-xs mt-2" data-copy-status aria-live="polite" style="color: hsl(var(--muted-foreground));">
+                Copy the URL or use one-click install.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="step-number">4</div>
+            <div>
+              <p class="font-medium text-sm mb-1">Install any app</p>
+              <p class="text-sm" style="color: hsl(var(--muted-foreground));">
+                Browse the store, find a HassOS Apps app and click <code>Install</code>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="padding:2rem;">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="icon-box" style="background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.2);">⚡</div>
+            <div>
+              <p class="font-semibold text-sm">One-click install</p>
+              <p class="text-xs" style="color: hsl(var(--muted-foreground));">Add the repository automatically</p>
+            </div>
+          </div>
+          <p class="text-sm mb-5 leading-relaxed" style="color: hsl(var(--muted-foreground));">
+            Use the button below to add the HassOS Apps repository directly to your Home Assistant instance, no manual steps required.
+          </p>
+          <a href="https://my.home-assistant.io/redirect/supervisor_add_addon_repository?repository_url=https%3A%2F%2Fgithub.com%2Fhassos-apps%2Frepository"
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full justify-center" style="width:100%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+            Add to Home Assistant
+          </a>
+
+          <hr class="separator my-5" />
+
+          <p class="text-xs mb-3 font-medium" style="color: hsl(var(--muted-foreground));">Repository URL</p>
+          <div class="code-block text-xs" style="word-break:break-all;">
+            https://github.com/hassos-apps/repository
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

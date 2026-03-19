@@ -1,0 +1,66 @@
+<section id="security" class="py-24" style="border-top: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="section-label mb-3">Security</p>
+        <h2 class="text-3xl font-bold tracking-tight mb-5" style="letter-spacing:-0.02em;">
+          Security by design
+        </h2>
+        <p class="leading-relaxed mb-6" style="color: hsl(var(--muted-foreground)); font-size:1.0625rem;">
+          Every app ships with a custom AppArmor profile, uses minimal permissions and receives
+          regular dependency updates. Security is not bolted on, it is built in from the start.
+        </p>
+        <p class="leading-relaxed mb-8" style="color: hsl(var(--muted-foreground)); font-size:1.0625rem;">
+          See <code>SECURITY.md</code> in each app repository for the threat model, disclosure policy
+          and audit notes.
+        </p>
+        <a href="https://github.com/hassos-apps/repository/search?q=SECURITY.md" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          Search SECURITY.md
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="card flex gap-3 items-start">
+          <span style="font-size:1.25rem; flex-shrink:0;">🔒</span>
+          <div>
+            <p class="font-medium text-sm mb-1">AppArmor Profiles</p>
+            <p class="text-xs leading-relaxed" style="color: hsl(var(--muted-foreground));">
+              Custom profiles that restrict what each app can access on the host.
+            </p>
+          </div>
+        </div>
+        <div class="card flex gap-3 items-start">
+          <span style="font-size:1.25rem; flex-shrink:0;">⚡</span>
+          <div>
+            <p class="font-medium text-sm mb-1">Minimal Permissions</p>
+            <p class="text-xs leading-relaxed" style="color: hsl(var(--muted-foreground));">
+              Apps request only the permissions they actually need. No over-privileging.
+            </p>
+          </div>
+        </div>
+        <div class="card flex gap-3 items-start">
+          <span style="font-size:1.25rem; flex-shrink:0;">🛡</span>
+          <div>
+            <p class="font-medium text-sm mb-1">Safe Defaults</p>
+            <p class="text-xs leading-relaxed" style="color: hsl(var(--muted-foreground));">
+              Configurations are conservative by default. Opt-in to elevated capabilities if needed.
+            </p>
+          </div>
+        </div>
+        <div class="card flex gap-3 items-start">
+          <span style="font-size:1.25rem; flex-shrink:0;">🔄</span>
+          <div>
+            <p class="font-medium text-sm mb-1">Regular Updates</p>
+            <p class="text-xs leading-relaxed" style="color: hsl(var(--muted-foreground));">
+              Dependabot and CI automation keep base images and dependencies up to date.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
