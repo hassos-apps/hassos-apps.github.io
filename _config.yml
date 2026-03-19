@@ -21,12 +21,6 @@ exclude:
   - .bundle
   - README.md
 
-# Collections (for future app pages)
-collections:
-  apps:
-    output: true
-    permalink: /apps/:name/
-
 # Defaults
 defaults:
   - scope:
